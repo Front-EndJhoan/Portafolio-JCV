@@ -244,7 +244,7 @@ nav ul li {
 .scroll-dn {
   width: 120px;
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   left: 45%;
   display: flex;
   flex-direction: column;
@@ -284,6 +284,9 @@ nav ul li {
 @media (max-width: 767px) {
   .content {
     width: 90%;
+  }
+  .scroll-dn {
+    left: 38%;
   }
 }
 .about {
