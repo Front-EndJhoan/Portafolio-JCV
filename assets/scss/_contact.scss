@@ -1,0 +1,82 @@
+.contact{
+    min-height: 100vh;
+    scroll-margin-top: 3em;
+}
+
+.contact-card{
+    display: flex;
+    width: 350px;
+    gap: 2em;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1em;
+    background-color: var(--cards-bg);
+}
+
+.contact-card:hover{
+    border: 1px solid var(--main-components);
+    box-shadow: 1px 1px 1px 1px rgb(10, 12, 57);
+}
+
+.icon-bg{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: var(--main-components);
+}
+
+#freelance{
+    padding: 8px;
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    border-radius: 25px;
+}
+
+#fulltime{
+    padding: 8px;
+    border: 1px solid purple;
+    color: purple;
+    border-radius: 25px;
+}
+
+#practice{
+    padding: 8px;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 25px;
+}
+
+.contact-article{
+    height: 250px;
+}
+
+.article-container{
+    max-width: 85%;
+    padding: 2em;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px var(--main-components);
+    background-color: var(--cards-bg);
+}
+
+
+
+@media (max-width: 767px){
+    .container-flex{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .contact-container{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px){
+      .article-container{
+        width: 100% !important;
+        text-align: center;
+    }
+}

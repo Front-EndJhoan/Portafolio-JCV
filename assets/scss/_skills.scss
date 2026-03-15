@@ -1,0 +1,130 @@
+.skills{
+    min-height: 100vh;
+    scroll-margin-top: 3em;
+}
+
+.skills-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.html-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-html{
+    width: 95%;
+    height: 10px;
+    background-color: orange;
+    border-radius: 25px;
+}
+
+.css-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-css{
+    width: 90%;
+    height: 10px;
+    background-color: blue;
+    border-radius: 25px;
+}
+
+.js-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-js{
+    width: 35%;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 25px;
+}
+
+.bootstrap-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-bootstrap{
+    width: 90%;
+    height: 10px;
+    background-color: purple;
+    border-radius: 25px;
+}
+
+.wordpress-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-wordpress{
+    width: 95%;
+    height: 10px;
+    background-color: rgb(50, 50, 207);
+    border-radius: 25px;
+}
+
+.git-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-git{
+    width: 85%;
+    height: 10px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.github-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-github{
+    width: 90%;
+    height: 10px;
+    background-color: gray;
+    border-radius: 25px;
+}
+
+.figma-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--cards-bg);
+    border-radius: 25px;
+}
+
+.measure-figma{
+    width: 90%;
+    height: 10px;
+    background-color: violet;
+    border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+    .skills-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+}

@@ -1,0 +1,29 @@
+.about{
+    min-height: 100vh;
+    scroll-margin-top: 3em;
+}
+
+.about-text{
+    max-width: 60ch;
+}
+
+.cards{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1em;
+    background-color: var(--cards-bg);
+}
+
+.cards:hover{
+    border: 1px solid var(--main-components);
+    box-shadow: 1px 1px 1px 1px rgb(10, 12, 57);
+}
+
+@media (max-width: 992px){
+    .about-content{
+        flex-direction: column;
+        gap: 2em;
+    }
+}
