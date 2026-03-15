@@ -1,14 +1,27 @@
 :root{
---bg-color:
-radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06), transparent 40%),
-radial-gradient(circle at 80% 30%, rgba(59,130,246,0.25), transparent 45%),
-linear-gradient(180deg, #020617 0%, #000000 100%);
+// DARK THEME //
+ --bg-color: `
+      radial-gradient(circle at 20% 20%,
+        rgba(255,255,255,0.06), transparent 40%),
+      radial-gradient(circle at 80% 30%,
+        rgba(59,130,246,0.25), transparent 45%),
+      linear-gradient(180deg, #020617 0%, #000000 100%);
 --text-color: hsl(193, 20%, 86%);
+--bg-color-light: hsl(193, 20%, 86%);
+--main-components: rgba(0, 16, 138, 1);
+--cards-bg: hsl(230, 67%, 11%);
+--nav-bg: rgba(2, 6, 23, 0.85);
+--nav-text: hsl(193, 20%, 86%);
+--nav-link: hsl(193, 15%, 70%);
+--nav-link-hover: hsl(193, 20%, 92%);
+--cta-bg: rgba(0, 16, 138, 1);
+--cta-text: hsl(193, 20%, 90%);
+--cta-border: rgba(59, 130, 246, 0.5);
+--heading-color: hsl(193, 25%, 92%);
+--muted-text: hsl(193, 15%, 65%);
 --heading-h1-size: clamp(1.5rem, 5vw + 1rem, 3rem);
 --headings-size: clamp(1rem, 2.5vw + 1rem, 1.75rem);
 --text-size: clamp(.5rem, 1.75vw + 0.5rem, 1.2rem);
---main-components: rgba(0, 16, 138, 1);
---cards-bg: hsl(230, 67%, 11%);
 
 //LIGHT THEME//
 

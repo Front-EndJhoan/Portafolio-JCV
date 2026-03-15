@@ -101,7 +101,7 @@ function toggleTheme() {
   const saved = localStorage.getItem('theme');
   const prefersDark = window.matchMedia(
     '(prefers-color-scheme: dark)').matches;
-  applyTheme(saved || (prefersDark ? 'dark' : 'light'));
+  applyTheme((prefersDark ? 'dark' : 'light'));
 })();
 
 const texto = "Scroll down";
