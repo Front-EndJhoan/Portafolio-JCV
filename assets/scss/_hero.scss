@@ -15,8 +15,9 @@
 .scroll-dn{
     width: 120px;
     position: absolute;
-    bottom: 10%;
-    left: 45%;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,10 +53,5 @@
     .content{
         width: 90%;
         top: 35%;
-    }
-
-    .scroll-dn{
-        left: 39%;
-        bottom: 15%;
     }
 }

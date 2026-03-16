@@ -69,7 +69,7 @@ const THEMES = {
     '--text-color':       'hsl(193, 40%, 15%)',
     '--bg-color-light':   'hsl(193, 40%, 15%)',
     '--main-components':  '#1a6e7a',
-    '--cards-bg':         '#1a6e7a',
+    '--cards-bg':         '#3ad7ef',
     '--nav-bg':           'rgba(204, 213, 214, 0.92)',
     '--nav-text':         'hsl(193, 40%, 15%)',
     '--nav-link':         'hsl(193, 35%, 28%)',
