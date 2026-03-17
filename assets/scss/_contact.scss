@@ -1,14 +1,13 @@
 .contact{
-    min-height: 100vh;
     scroll-margin-top: 3em;
 }
 
 .contact-card{
     display: flex;
-    width: 400px;
+    width: 100%;
     gap: 2em;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 16px;
     padding: 1em;
     background-color: var(--cards-bg);
 }
@@ -33,7 +32,7 @@
     border: 1px solid greenyellow;
     color: greenyellow;
     background-color: rgba(172, 255, 47, 0.250);
-    border-radius: 25px;
+    border-radius: 16px;
 }
 
 #fulltime{
@@ -41,7 +40,7 @@
     border: 1px solid purple;
     color: purple;
     background-color: rgba(128, 0, 128, 0.250);
-    border-radius: 25px;
+    border-radius: 16px;
 }
 
 #practice{
@@ -49,7 +48,7 @@
     border: 1px solid blue;
     color: blue;
     background-color: rgba(0, 0, 255, 0.250);
-    border-radius: 25px;
+    border-radius: 16px;
 }
 
 .contact-article{
@@ -59,7 +58,7 @@
 .article-container{
     max-width: 85%;
     padding: 2em;
-    border-radius: 25px;
+    border-radius: 16px;
     box-shadow: 1px 1px 1px var(--main-components);
     background-color: var(--cards-bg);
 }
@@ -81,5 +80,9 @@
       .article-container{
         width: 100% !important;
         text-align: center;
+    }
+
+    .contact-card{
+        width: 100%;
     }
 }

@@ -97,7 +97,7 @@ ul{
     padding: 1em;
     background-color: var(--main-components);
     border: 1px solid var(--bg-color);
-    border-radius: 25px;
+    border-radius: 16px;
     transition: .1s transform ease;
 }
 
@@ -105,7 +105,7 @@ ul{
     padding: 1em;
     background-color: var(--main-components);
     border: 1px solid var(--bg-color);
-    border-radius: 25px;
+    border-radius: 16px;
     box-shadow: 1px 1px 1px 1px rgb(0, 76, 255);
     transform: translateY(-5px); 
 }

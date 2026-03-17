@@ -91,7 +91,7 @@ ul {
   padding: 1em;
   background-color: var(--main-components);
   border: 1px solid var(--bg-color);
-  border-radius: 25px;
+  border-radius: 16px;
   transition: 0.1s transform ease;
 }
 
@@ -99,7 +99,7 @@ ul {
   padding: 1em;
   background-color: var(--main-components);
   border: 1px solid var(--bg-color);
-  border-radius: 25px;
+  border-radius: 16px;
   box-shadow: 1px 1px 1px 1px rgb(0, 76, 255);
   transform: translateY(-5px);
 }
@@ -239,6 +239,11 @@ nav ul li {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .menu.active {
+    padding: 0 !important;
+  }
+}
 .hero {
   background-color: var(--background);
   position: relative;
@@ -301,7 +306,6 @@ nav ul li {
   }
 }
 .about {
-  min-height: 100vh;
   scroll-margin-top: 3em;
 }
 
@@ -314,7 +318,7 @@ nav ul li {
   display: flex;
   gap: 2em;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 16px;
   padding: 1em;
   background-color: var(--cards-bg);
 }
@@ -331,7 +335,6 @@ nav ul li {
   }
 }
 .skills {
-  min-height: 100vh;
   scroll-margin-top: 3em;
 }
 
@@ -461,7 +464,6 @@ nav ul li {
   }
 }
 .experience {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -476,10 +478,10 @@ nav ul li {
 }
 
 .project-card {
-  width: 350px;
+  width: 100%;
   height: 350px;
   background-color: var(--cards-bg);
-  border-radius: 25px;
+  border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -493,7 +495,7 @@ nav ul li {
   height: 46%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
@@ -558,21 +560,17 @@ nav ul li {
   .container-cards {
     grid-template-columns: 1fr;
   }
-  .project-card {
-    width: 350px;
-  }
 }
 .contact {
-  min-height: 100vh;
   scroll-margin-top: 3em;
 }
 
 .contact-card {
   display: flex;
-  width: 400px;
+  width: 100%;
   gap: 2em;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 16px;
   padding: 1em;
   background-color: var(--cards-bg);
 }
@@ -597,7 +595,7 @@ nav ul li {
   border: 1px solid greenyellow;
   color: greenyellow;
   background-color: rgba(172, 255, 47, 0.25);
-  border-radius: 25px;
+  border-radius: 16px;
 }
 
 #fulltime {
@@ -605,7 +603,7 @@ nav ul li {
   border: 1px solid purple;
   color: purple;
   background-color: rgba(128, 0, 128, 0.25);
-  border-radius: 25px;
+  border-radius: 16px;
 }
 
 #practice {
@@ -613,7 +611,7 @@ nav ul li {
   border: 1px solid blue;
   color: blue;
   background-color: rgba(0, 0, 255, 0.25);
-  border-radius: 25px;
+  border-radius: 16px;
 }
 
 .contact-article {
@@ -623,7 +621,7 @@ nav ul li {
 .article-container {
   max-width: 85%;
   padding: 2em;
-  border-radius: 25px;
+  border-radius: 16px;
   box-shadow: 1px 1px 1px var(--main-components);
   background-color: var(--cards-bg);
 }
@@ -641,6 +639,9 @@ nav ul li {
   .article-container {
     width: 100% !important;
     text-align: center;
+  }
+  .contact-card {
+    width: 100%;
   }
 }
 .foot {

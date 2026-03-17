@@ -1,5 +1,4 @@
 .about{
-    min-height: 100vh;
     scroll-margin-top: 3em;
 }
 
@@ -12,7 +11,7 @@
     display: flex;
     gap: 2em;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 16px;
     padding: 1em;
     background-color: var(--cards-bg);
 }
