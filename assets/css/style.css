@@ -19,8 +19,8 @@
   --heading-color: hsl(193, 25%, 92%);
   --muted-text: hsl(193, 15%, 65%);
   --heading-h1-size: clamp(1.5rem, 5vw + 1.5rem, 3rem);
-  --headings-size: clamp(1rem, 2.5vw + 1.25rem, 2rem);
-  --text-size: clamp(1rem, 1.75vw + 1rem, 1.2rem);
+  --headings-size: clamp(1rem, 2.5vw + 1.25rem, 1.75rem);
+  --text-size: clamp(1rem, 1.75vw + 1rem, 1.25rem);
 }
 :root :root.light {
   --bg-color:
@@ -254,7 +254,7 @@ nav ul li {
 .hero {
   background-color: var(--background);
   position: relative;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
 }
 
 .content {
