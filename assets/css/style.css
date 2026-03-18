@@ -272,7 +272,7 @@ nav ul li {
 .scroll-dn {
   width: 120px;
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
