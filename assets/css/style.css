@@ -18,18 +18,33 @@
   --cta-border: rgba(59, 130, 246, 0.5);
   --heading-color: hsl(193, 25%, 92%);
   --muted-text: hsl(193, 15%, 65%);
-  --heading-h1-size: clamp(1.5rem, 5vw + 1rem, 3rem);
+  --heading-h1-size: clamp(1.5rem, 5vw + 1.5rem, 3rem);
   --headings-size: clamp(1rem, 2.5vw + 1rem, 1.75rem);
-  --text-size: clamp(.5rem, 1.75vw + 0.5rem, 1.2rem);
-  --nav-bg: rgba(2, 6, 23, 0.85);
-  --nav-text: hsl(193, 20%, 86%);
-  --nav-link: hsl(193, 15%, 70%);
-  --nav-link-hover: hsl(193, 20%, 92%);
+  --text-size: clamp(1rem, 1.75vw + 1rem, 1.2rem);
+}
+:root :root.light {
+  --bg-color:
+    radial-gradient(circle at 20% 20%,
+      rgba(0,0,0,0.03), transparent 40%),
+    radial-gradient(circle at 80% 30%,
+      rgba(59,130,246,0.10), transparent 45%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  --text-color: hsl(222, 47%, 11%); /* gris muy oscuro (no negro puro) */
+  --bg-color-light: hsl(210, 40%, 98%);
+  --main-components: rgba(0, 16, 138, 1); /* mantienes branding */
+  --cards-bg: hsl(0, 0%, 100%);
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-text: hsl(222, 47%, 11%);
+  --nav-link: hsl(215, 16%, 40%);
+  --nav-link-hover: hsl(222, 47%, 20%);
   --cta-bg: rgba(0, 16, 138, 1);
-  --cta-text: hsl(193, 20%, 90%);
-  --cta-border: rgba(59, 130, 246, 0.5);
-  --heading-color: hsl(193, 25%, 92%);
-  --muted-text: hsl(193, 15%, 65%);
+  --cta-text: hsl(0, 0%, 100%);
+  --cta-border: rgba(59, 130, 246, 0.4);
+  --heading-color: hsl(222, 47%, 11%);
+  --muted-text: hsl(215, 16%, 50%);
+  --heading-h1-size: clamp(1.5rem, 5vw + 1.5rem, 3rem);
+  --headings-size: clamp(1rem, 2.5vw + 1rem, 1.75rem);
+  --text-size: clamp(1rem, 1.75vw + 1rem, 1.2rem);
 }
 
 body {
@@ -39,12 +54,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-.judson-regular {
-  font-family: "Judson", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .judson-bold {
@@ -68,6 +77,7 @@ h2, h3, h4 {
 }
 
 p {
+  font-family: "montserrat", sans-serif;
   font-size: var(--text-size);
   margin: 0;
 }
@@ -75,11 +85,12 @@ p {
 a {
   text-decoration: none;
   color: var(--text-color);
+  font-size: var(--text-size);
+  font-family: "montserrat", sans-serif;
 }
 
 a:hover {
   text-decoration: none;
-  color: hsl(0, 0%, 100%);
 }
 
 ul {
@@ -88,6 +99,7 @@ ul {
 }
 
 .cta {
+  color: currentColor;
   padding: 1em;
   background-color: var(--main-components);
   border: 1px solid var(--bg-color);
@@ -100,7 +112,7 @@ ul {
   background-color: var(--main-components);
   border: 1px solid var(--bg-color);
   border-radius: 16px;
-  box-shadow: 1px 1px 1px 1px rgb(0, 76, 255);
+  box-shadow: 1px 1px 1px 1px var(--main-components);
   transform: translateY(-5px);
 }
 
@@ -224,9 +236,9 @@ nav ul li {
   }
   .menu.active {
     left: 0;
-    top: 80px;
+    top: 60px;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -237,11 +249,6 @@ nav ul li {
   }
   #contacto {
     display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu.active {
-    padding: 0 !important;
   }
 }
 .hero {
@@ -354,7 +361,7 @@ nav ul li {
 .measure-html {
   width: 95%;
   height: 10px;
-  background-color: orange;
+  background-color: hsl(12, 78%, 54%);
   border-radius: 25px;
 }
 
@@ -368,7 +375,7 @@ nav ul li {
 .measure-css {
   width: 90%;
   height: 10px;
-  background-color: blue;
+  background-color: hsl(228, 78%, 54%);
   border-radius: 25px;
 }
 
@@ -382,7 +389,7 @@ nav ul li {
 .measure-js {
   width: 35%;
   height: 10px;
-  background-color: yellow;
+  background-color: hsl(53, 93%, 56%);
   border-radius: 25px;
 }
 
@@ -396,7 +403,7 @@ nav ul li {
 .measure-bootstrap {
   width: 90%;
   height: 10px;
-  background-color: purple;
+  background-color: hsl(271, 97%, 55%);
   border-radius: 25px;
 }
 
@@ -410,7 +417,7 @@ nav ul li {
 .measure-wordpress {
   width: 95%;
   height: 10px;
-  background-color: rgb(50, 50, 207);
+  background-color: hsl(195, 55%, 45%);
   border-radius: 25px;
 }
 
@@ -424,7 +431,7 @@ nav ul li {
 .measure-git {
   width: 85%;
   height: 10px;
-  background-color: black;
+  background-color: hsl(10, 86%, 58%);
   border-radius: 25px;
 }
 
@@ -438,7 +445,7 @@ nav ul li {
 .measure-github {
   width: 90%;
   height: 10px;
-  background-color: gray;
+  background-color: hsl(218, 10%, 15%);
   border-radius: 25px;
 }
 
@@ -452,7 +459,7 @@ nav ul li {
 .measure-figma {
   width: 90%;
   height: 10px;
-  background-color: violet;
+  background-color: hsl(157, 84%, 44%);
   border-radius: 25px;
 }
 
@@ -482,6 +489,7 @@ nav ul li {
   height: 350px;
   background-color: var(--cards-bg);
   border-radius: 16px;
+  box-shadow: 1px 1px 1px var(--main-components);
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -573,11 +581,12 @@ nav ul li {
   border-radius: 16px;
   padding: 1em;
   background-color: var(--cards-bg);
+  box-shadow: 1px 1px 1px var(--main-components);
 }
 
 .contact-card:hover {
   border: 1px solid var(--main-components);
-  box-shadow: 1px 1px 1px 1px rgb(10, 12, 57);
+  box-shadow: 1px 1px 1px 1px var(--main-components);
 }
 
 .icon-bg {
@@ -619,8 +628,7 @@ nav ul li {
 }
 
 .article-container {
-  max-width: 85%;
-  padding: 2em;
+  padding: 1em;
   border-radius: 16px;
   box-shadow: 1px 1px 1px var(--main-components);
   background-color: var(--cards-bg);
@@ -636,10 +644,6 @@ nav ul li {
   }
 }
 @media (max-width: 576px) {
-  .article-container {
-    width: 100% !important;
-    text-align: center;
-  }
   .contact-card {
     width: 100%;
   }

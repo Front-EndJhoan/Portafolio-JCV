@@ -81,9 +81,9 @@ nav ul li{
 
   .menu.active {
     left: 0;
-    top: 80px;
+    top: 60px;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -95,12 +95,6 @@ nav ul li{
 
   #contacto{
     display: none;
-  }
-}
-
-@media screen and (max-width: 767px){
-  .menu.active{
-    padding: 0!important;
   }
 }
 

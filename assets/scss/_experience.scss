@@ -17,6 +17,7 @@
     height: 350px;
     background-color: var(--cards-bg);
     border-radius: 16px;
+    box-shadow: 1px 1px 1px var(--main-components);
     overflow: hidden;
     transition: all 0.3s ease;
 }

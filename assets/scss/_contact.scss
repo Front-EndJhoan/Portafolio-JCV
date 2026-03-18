@@ -10,11 +10,12 @@
     border-radius: 16px;
     padding: 1em;
     background-color: var(--cards-bg);
+    box-shadow: 1px 1px 1px var(--main-components);
 }
 
 .contact-card:hover{
     border: 1px solid var(--main-components);
-    box-shadow: 1px 1px 1px 1px rgb(10, 12, 57);
+    box-shadow: 1px 1px 1px 1px var(--main-components);
 }
 
 .icon-bg{
@@ -56,8 +57,7 @@
 }
 
 .article-container{
-    max-width: 85%;
-    padding: 2em;
+    padding: 1em;
     border-radius: 16px;
     box-shadow: 1px 1px 1px var(--main-components);
     background-color: var(--cards-bg);
@@ -77,11 +77,6 @@
 }
 
 @media (max-width: 576px){
-      .article-container{
-        width: 100% !important;
-        text-align: center;
-    }
-
     .contact-card{
         width: 100%;
     }
